@@ -1,4 +1,7 @@
 import "../css/index.css";
+import Categories from "../controllers/categories.controller";
+
+/* Modal and Screen views */
 
 const wrapper = document.querySelector(".wrapper");
 const backBtn = document.querySelector(".back-btn");
@@ -24,3 +27,8 @@ const closeModal = () => {
 
 addTaskBtn.addEventListener("click", showModal);
 closeModalBtn.addEventListener("click", closeModal);
+
+/* Managing content with js */
+
+const tasksWrapper = document.querySelector("tasks-wrapper");
+tasksWrapper.appendChild(Categories);
